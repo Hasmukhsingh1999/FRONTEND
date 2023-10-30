@@ -7,7 +7,7 @@ import { useMutation } from "react-query";
 const deleteTicket = async (id) => {
   try {
     const { data } = await axios.delete(
-      `http://localhost:5000/api/tickets/delete-ticket/${id}`
+      `http://backend-blond-mu.vercel.app/api/tickets/delete-ticket/${id}`
     );
     return data;
   } catch (error) {
