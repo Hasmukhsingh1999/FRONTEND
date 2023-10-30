@@ -10,7 +10,7 @@ const page = () => {
     const getData = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/tickets/show-tickets"
+          "http://roam-lust-explore-server.vercel.app/api/tickets/show-tickets"
         );
         settickets(res.data);
       } catch (error) {

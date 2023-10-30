@@ -49,7 +49,7 @@ const Form = () => {
 
     try {
       const resp = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "http://roam-lust-explore-server.vercel.app/api/tickets",
         dataToSend
       );
       console.log(resp.data);
